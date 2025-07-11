@@ -15,10 +15,12 @@ Welcome to **YourChoice**, a modern and responsive recipe manager built with **R
 - 📱 Fully responsive (mobile, tablet, desktop)
 
 ---
-
 ## 📸 Screenshots
 
-> Add screenshots or demo GIFs here
+### 🏠 Home Page
+
+![Home Page](./Screenshots/screenshortHomePage.png)
+
 
 ---
 
@@ -43,6 +45,10 @@ yourchoice-recipe-app/
 ├── src/
 │   ├── assets/               # Images, icons, and static assets
 │   │   └── logo.png
+
+├── screenshots/
+│   └── home-page.png        # Home Page Demo 
+
 │
 │   ├── components/           # Reusable UI components
 │   │   ├── Navbar.jsx
