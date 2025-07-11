@@ -36,13 +36,44 @@ Welcome to **YourChoice**, a modern and responsive recipe manager built with **R
 
 ## 📂 Folder Structure
 
-src/
-├── assets/ # images and icons
-├── components/ # reusable UI components
-├── context/ # global recipe context
-├── pages/ # route-based pages (Home, About, etc.)
-├── App.jsx # root component
-├── main.jsx # app entry point
-└── index.css # Tailwind CSS styles
+yourchoice-recipe-app/
+├── public/
+│   └── index.html
+│
+├── src/
+│   ├── assets/               # Images, icons, and static assets
+│   │   └── logo.png
+│
+│   ├── components/           # Reusable UI components
+│   │   ├── Navbar.jsx
+│   │   ├── RecipeCard.jsx
+│   │   └── Footer.jsx
+│
+│   ├── context/              # Global context for recipe state
+│   │   └── RecipeContext.jsx
+│
+│   ├── pages/                # Route pages
+│   │   ├── Home.jsx
+│   │   ├── About.jsx
+│   │   ├── Recipes.jsx
+│   │   ├── CreateRecipes.jsx
+│   │   ├── SingleRecipe.jsx
+│   │   ├── FavRecipes.jsx
+│   │   ├── TreshRecipes.jsx
+│   │   └── PageNotFound.jsx
+│
+│   ├── routes/               # Route configuration
+│   │   └── MainRoutes.jsx
+│
+│   ├── App.jsx               # Main app component
+│   ├── main.jsx              # React app entry point
+│   └── index.css             # Tailwind and global styles
+│
+├── .gitignore
+├── package.json
+├── postcss.config.js
+├── tailwind.config.js
+└── README.md
+
 
 
