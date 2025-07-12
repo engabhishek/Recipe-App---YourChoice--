@@ -4,6 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "homepage": "https://engabhishek.github.io/Recipe-App---YourChoice--/",
+  "postbuild": "cp dist/index.html dist/404.html"
+
   "scripts": {
     "dev": "vite",
     "build": "vite build",
