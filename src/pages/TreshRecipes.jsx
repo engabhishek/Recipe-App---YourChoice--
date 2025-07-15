@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { recipecontext } from "../context/RecipeContext";
 import { toast } from "react-toastify";
 import RecipeCard from "../Components/RecipeCard";
@@ -14,9 +14,20 @@ const TreshRecipes = () => {
     setTrashData(trashData.filter((item) => item.id !== id));
     toast.success("Recipe restored");
   };
+  const [favroite, setfavroite] = useState(() => {
+      try {
+        const storedFav = JSON.parse(localStorage.getItem("fav"));
+        return Array.isArray(storedFav) ? storedFav : [];
+      } catch (e) {
+        return [];
+      }
+    });
 
   const deleteForever = (id) => {
     setTrashData(trashData.filter((item) => item.id !== id));
+    const filterfav = favroite.filter((f) => f.id != id);
+    setfavroite(filterfav);
+    localStorage.setItem("fav", JSON.stringify(filterfav));
     toast.error("Recipe permanently deleted");
   };
   const AllClearTrashData = ()=>{
