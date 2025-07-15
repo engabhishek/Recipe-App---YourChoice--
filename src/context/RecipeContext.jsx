@@ -26,7 +26,7 @@ const defaultRecipes = [
     rating: 4.7,
     servings: 3,
     author: "Tarla Dalal",
-    chef: "Chef Anjali Sharma",
+    chef: "Chef Anjali",
     datePublished: "2021-08-20",
   },
   {
